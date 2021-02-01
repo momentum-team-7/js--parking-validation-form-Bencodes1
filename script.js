@@ -2,6 +2,13 @@ console.log('Add validation!');
 
 const form = document.querySelector('#parking-form')
 
+// let startdate = document.querySelector('#start-date').value
+// const d = startdate
+// const date = startdate.getDate()
+// console.log("d: ", d , ". date:", date, ".")
+
+let numdays = document.querySelector('#days-field').value
+console.log("Number of days: ", numdays)
 
 window.addEventListener('submit', event => {
     event.preventDefault()
@@ -32,9 +39,10 @@ function totalExpense() {
     const numdays = document.querySelector('#days').value
     console.log('total days: ', numdays)
  
-    let startdate = document.querySelector('#start-date').value
-    console.log("Start Date:  ", startdate)
+    // let startdate = document.querySelector('#start-date').value
+    // console.log("Start Date:  ", startdate)
 
     let fullPrice = numdays * price;
     return "Total cost: $",fullPrice;
 }
+
